@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
-    <title>dart_web_application_1</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="main.dart.js"></script>
+  <meta charset="UTF-8">
+  <title>Dart Web Keren</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.5em;
+      margin-top: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff4081;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-
 <body>
+  <h1>Selamat Datang di Dart Web!</h1>
+  <p id="output">Klik tombol di bawah untuk melihat pesan!</p>
+  <button id="btn">Klik Aku!</button>
 
-  <div id="output"></div>
-
+  <script defer src="main.dart.js"></script>
 </body>
 </html>
